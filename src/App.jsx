@@ -59,17 +59,6 @@ function App() {
     return `${hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}.${getMilliseconds}`;
   };
 
-  const submitData = () => {
-    const firstName = document.querySelector('.first-name-input').value;
-    const lastName = document.querySelector('.last-name-input').value;
-    const phone = document.querySelector('.phone-input').value;
-    const idNumber = document.querySelector('.id-number-input').value;
-    const timeontask = formatTime(time);
-
-    
-
-  
-  }
 
   return (
     <div className="App">
