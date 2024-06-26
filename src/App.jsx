@@ -5,7 +5,7 @@ import './Stopwatch.css';
 import Ads from './Ads';
 
 function App() {
-  const [showAds, setShowAds] = useState(true);
+  const [showAds, setShowAds] = useState(false);
   const [bookingTime, setBookingTime] = useState("10:30-11:00");
   const [idType, setIdType] = useState("National ID Card Number");
   const [time, setTime] = useState(0);
