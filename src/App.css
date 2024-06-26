@@ -1,10 +1,11 @@
+/* App.css */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
-  overflow: hidden; /* Prevent scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .showadbut {
@@ -39,7 +40,7 @@ body, html {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 300px; /* Ensure the form doesn't get too wide */
+  max-width: 400px; /* Adjusted for better mobile experience */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -52,7 +53,7 @@ body, html {
 .input-data-form input,
 .input-data-form select {
   width: 100%;
-  padding: 8px;
+  padding: 12px; /* Increased padding for better touch targets */
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -69,7 +70,7 @@ body, html {
 
 .input-data-form button {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Increased padding for better touch targets */
   background-color: #ff0000;
   color: white;
   border: none;
@@ -93,7 +94,7 @@ body, html {
 }
 
 .id-selection div input {
-  width: 20px;
+  width: auto; /* Adjusted width for better display */
 }
 
 .footer {
@@ -115,4 +116,28 @@ body, html {
 footer p {
   margin: 0;
   padding: 0 10px; /* Add some padding to avoid content touching the edges */
+}
+
+
+@media (max-width: 600px) {
+  .input-data-form {
+    padding: 15px;
+    box-shadow: none; /* Remove shadow for cleaner look on mobile */
+  }
+
+  .input-data-form label {
+    margin-bottom: 3px;
+  }
+
+  .input-data-form input,
+  .input-data-form select,
+  .input-data-form button {
+    padding: 10px;
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .showadbut {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }
