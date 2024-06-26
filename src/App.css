@@ -7,6 +7,22 @@ body, html {
   overflow: hidden; /* Prevent scrolling */
 }
 
+.showadbut {
+  z-index: 11;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer/hand icon */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.showadbut:hover {
+  background-color: #45a049; /* Darker shade of green */
+}
+
 .App {
   display: flex;
   justify-content: center;

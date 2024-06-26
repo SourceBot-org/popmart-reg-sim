@@ -5,13 +5,16 @@ import './Stopwatch.css';
 import Ads from './Ads';
 
 function App() {
+  const [showAds, setShowAds] = useState(true);
   const [bookingTime, setBookingTime] = useState("10:30-11:00");
   const [idType, setIdType] = useState("National ID Card Number");
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const hasStarted = useRef(false);
 
-  
+  const toggleAds = () => {
+    setShowAds(!showAds);
+  };
 
   useEffect(() => {
     let interval;
@@ -56,11 +59,23 @@ function App() {
     return `${hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}.${getMilliseconds}`;
   };
 
+  const submitData = () => {
+    const firstName = document.querySelector('.first-name-input').value;
+    const lastName = document.querySelector('.last-name-input').value;
+    const phone = document.querySelector('.phone-input').value;
+    const idNumber = document.querySelector('.id-number-input').value;
+    const timeontask = formatTime(time);
+
+    
+
   
+  }
 
   return (
     <div className="App">
-      <Ads />
+      <button type="button" className="showadbut" onClick={toggleAds}>{showAds ? 'ใช้งานระบบฝึกซ้อม' : 'ช่องทางสนับสนุน'}</button>
+      {showAds && <Ads />}
+      
       <header className="header">
         <h1>ฝึกซ้อมลงทะเบียน</h1>
       </header>
@@ -117,10 +132,7 @@ function App() {
 
       <footer className='footer'>
       <p>&copy; 2024 Sourcebot. All rights reserved.</p>
-      <p>
-        This application is the result of the hard work and dedication of the Sourcebot team.
-        We're offering it for free to the community commercially use of this application is strictly prohibited.
-      </p>
+
       </footer> 
  
     </div>
