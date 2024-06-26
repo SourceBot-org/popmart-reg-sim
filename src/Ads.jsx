@@ -5,7 +5,7 @@ export default function Ads() {
     return (
         <div className="Ads">
             <h1>หากท่านชื่นชอบระบบฝึกซ้อมนี้ท่านสามารถสนับสนุนได้ 2 ทาง</h1>
-            <h2>1. สนับสนุนตามศรัทธา นายวศิน ศิลากอง K-Bank 133-1-31668-3</h2>
+            <h2>1. สนับสนุนตามศรัทธา K-Bank 133-1-31668-3</h2>
             <h2>2. สั่งซื้อโปรแกรมจากทาง SourceBot</h2>
             <div className="ads-videos">
                 <div className="ads-video">
