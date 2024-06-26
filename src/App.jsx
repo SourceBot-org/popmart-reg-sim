@@ -120,7 +120,7 @@ function App() {
       
 
       <footer className='footer'>
-      <p>&copy; 2024 Sourcebot. All rights reserved.</p>
+      <p>&copy; 2024 Sourcebot. All rights reserved. Unauthorized commercial use of this web is strictly prohibited</p>
 
       </footer> 
  
